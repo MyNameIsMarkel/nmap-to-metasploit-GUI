@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=nmap to Metasploit GUI
+GenericName=Correlación nmap / Metasploit
+Comment=Correlaciona servicios de nmap con módulos de Metasploit
+Exec=__EXEC__
+Icon=__ICON__
+Terminal=false
+Categories=Utility;Security;System;Network;
+Keywords=nmap;metasploit;msf;pentest;exploit;kali;searchsploit;
+StartupNotify=true

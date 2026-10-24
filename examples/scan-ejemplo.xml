@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" args="nmap -sV --script vuln -oX" start="1700000000" version="7.94">
+  <host>
+    <status state="up"/>
+    <address addr="192.168.56.101" addrtype="ipv4"/>
+    <hostnames><hostname name="metasploitable" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="21">
+        <state state="open"/>
+        <service name="ftp" product="vsftpd" version="2.3.4"/>
+      </port>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh" product="OpenSSH" version="4.7p1"/>
+      </port>
+      <port protocol="tcp" portid="139">
+        <state state="open"/>
+        <service name="netbios-ssn" product="Samba smbd" version="3.0.20"/>
+      </port>
+      <port protocol="tcp" portid="445">
+        <state state="open"/>
+        <service name="microsoft-ds" product="Samba smbd" version="3.0.20"/>
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http" product="Apache httpd" version="2.4.49"/>
+        <script id="vulners" output="  CVE-2021-41773   7.5   https://vulners.com/cve/CVE-2021-41773"/>
+      </port>
+      <port protocol="tcp" portid="3632">
+        <state state="open"/>
+        <service name="distccd" product="distccd" version="1"/>
+      </port>
+      <port protocol="tcp" portid="6667">
+        <state state="open"/>
+        <service name="irc" product="UnrealIRCd"/>
+      </port>
+      <port protocol="tcp" portid="3306">
+        <state state="open"/>
+        <service name="mysql" product="MySQL" version="5.0.51a"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>

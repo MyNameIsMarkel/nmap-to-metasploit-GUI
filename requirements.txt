@@ -1,0 +1,6 @@
+# Interfaz gráfica
+PyQt5>=5.15
+
+# Herramientas externas (opcionales, para el flujo en vivo) — en Kali:
+#   sudo apt install nmap metasploit-framework exploitdb
+# La correlación offline funciona sin ellas.
