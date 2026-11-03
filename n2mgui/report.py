@@ -54,13 +54,13 @@ def to_html(matches: list[Match], lhost: str = "TU_IP") -> str:
     return f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <title>Informe nmap → Metasploit</title>
 <style>
- body{{font-family:system-ui,sans-serif;background:#13100b;color:#f3ede3;margin:24px}}
- h1{{color:#f6873a}} .muted{{color:#b6a992}}
+ body{{font-family:system-ui,sans-serif;background:#000000;color:#f4f4f4;margin:24px}}
+ h1{{color:#ffffff}} .muted{{color:#8c8c8c}}
  table{{border-collapse:collapse;width:100%;margin-top:16px;font-size:13px}}
- th,td{{border:1px solid #3a3326;padding:7px 9px;vertical-align:top;text-align:left}}
- th{{background:#231d12;color:#f6873a}}
- tr.exploit td:first-child{{border-left:3px solid #f6873a}}
- code{{color:#ffb673}} pre{{margin:0;white-space:pre-wrap;color:#d7ffd0;font-size:12px}}
+ th,td{{border:1px solid #2b2b2b;padding:7px 9px;vertical-align:top;text-align:left}}
+ th{{background:#161616;color:#ffffff}}
+ tr.exploit td:first-child{{border-left:3px solid #ffffff}}
+ code{{color:#e8e8e8}} pre{{margin:0;white-space:pre-wrap;color:#cfcfcf;font-size:12px}}
 </style></head><body>
 <h1>Informe nmap → Metasploit</h1>
 <p class="muted">Generado: {datetime.now():%Y-%m-%d %H:%M} · {len(matches)} coincidencias ·

@@ -1,18 +1,18 @@
 """Hoja de estilo (QSS) — base compartida con las demás apps; acento naranja."""
 
-BG = "#0e141d"
-PANEL = "#151d2a"
-PANEL_2 = "#1c2736"
-BORDER = "#2a3850"
-TEXT = "#e8eef7"
-MUTED = "#8a99b3"
-ACCENT = "#f6873a"       # naranja principal
-ACCENT_DK = "#db6a1f"
-CONSOLE_BG = "#0a0f17"
-CONSOLE_TEXT = "#ffd9b8"   # naranja claro para la consola
-OK = "#5ac88a"
-BAD = "#ef5f5f"
-WARN = "#f0c33a"
+BG = "#000000"
+PANEL = "#0c0c0c"
+PANEL_2 = "#161616"
+BORDER = "#2b2b2b"
+TEXT = "#f4f4f4"
+MUTED = "#8c8c8c"
+ACCENT = "#ffffff"       # naranja principal
+ACCENT_DK = "#cccccc"
+CONSOLE_BG = "#000000"
+CONSOLE_TEXT = "#e8e8e8"   # naranja claro para la consola
+OK = "#ffffff"
+BAD = "#d7d7d7"
+WARN = "#a8a8a8"
 
 STYLESHEET = f"""
 * {{
@@ -27,8 +27,8 @@ QLabel#title {{ font-size: 17px; font-weight: 700; color: {TEXT}; }}
 QLabel#subtitle {{ color: {MUTED}; font-size: 12px; }}
 
 QFrame#banner {{
-    background: rgba(246,135,58,0.10);
-    border: 1px solid rgba(246,135,58,0.45);
+    background: rgba(159, 159, 159,0.10);
+    border: 1px solid rgba(159, 159, 159,0.45);
     border-radius: 8px;
 }}
 QLabel#bannerText {{ color: {ACCENT}; font-size: 12px; }}
@@ -40,20 +40,20 @@ QPushButton {{
     padding: 8px 12px;
     color: {TEXT};
 }}
-QPushButton:hover {{ border-color: {ACCENT}; background: #233041; }}
-QPushButton:pressed {{ background: #2a3a4d; }}
+QPushButton:hover {{ border-color: {ACCENT}; background: #2e2e2e; }}
+QPushButton:pressed {{ background: #373737; }}
 QPushButton:disabled {{ color: {MUTED}; background: {PANEL}; }}
 
 QPushButton#primary {{
-    background: {ACCENT}; color: #1c0f04; font-weight: 700; border: none;
+    background: {ACCENT}; color: #121212; font-weight: 700; border: none;
 }}
 QPushButton#primary:hover {{ background: {ACCENT_DK}; }}
-QPushButton#primary:disabled {{ background: #4a3824; color: #ae9177; }}
+QPushButton#primary:disabled {{ background: #3b3b3b; color: #979797; }}
 
 QPushButton#danger {{
     background: transparent; border: 1px solid {BAD}; color: {BAD};
 }}
-QPushButton#danger:hover {{ background: rgba(239,95,95,0.12); }}
+QPushButton#danger:hover {{ background: rgba(138, 138, 138,0.12); }}
 
 QPlainTextEdit, QTextEdit {{
     background: {CONSOLE_BG};
@@ -80,7 +80,7 @@ QTableWidget {{
     border: 1px solid {BORDER};
     border-radius: 10px;
     gridline-color: {BORDER};
-    selection-background-color: rgba(246,135,58,0.22);
+    selection-background-color: rgba(159, 159, 159,0.22);
     selection-color: {TEXT};
 }}
 QTableWidget::item {{ padding: 4px 6px; }}

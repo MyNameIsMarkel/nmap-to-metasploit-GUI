@@ -39,8 +39,8 @@ HERE = Path(__file__).resolve().parent
 ICON_PNG = HERE / "resources" / "icon.png"
 
 RANK_COLORS = {
-    "excellent": "#5ac88a", "great": "#7fcf6a", "good": "#b6cf5a",
-    "normal": "#c7b56a", "average": "#e0a04a", "low": "#d98a52", "manual": "#ef5f5f",
+    "excellent": "#ffffff", "great": "#e0e0e0", "good": "#c4c4c4",
+    "normal": "#a8a8a8", "average": "#8c8c8c", "low": "#737373", "manual": "#5a5a5a",
 }
 
 
